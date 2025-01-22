@@ -1,4 +1,4 @@
-import { Object3D, Vector3, Quaternion } from 'three';
+import { Object3D, Vector3 } from 'three';
 import { Collider, CollisionInfo } from './Collider';
 
 export class GameObject extends Object3D {
@@ -19,25 +19,25 @@ export class GameObject extends Object3D {
      * 毎フレーム呼ばれるメソッド
      * @param deltaTime 前フレームからの経過時間（秒）
      */
-    protected update(deltaTime: number): void {}
+    protected update(_deltaTime: number): void {}
 
     /**
      * 衝突が発生した時に呼ばれるメソッド
      * @param collision 衝突情報
      */
-    protected onCollision(collision: CollisionInfo): void {}
+    protected onCollision(_collision: CollisionInfo): void {}
 
     /**
      * トリガーに入った時に呼ばれるメソッド
      * @param collision 衝突情報
      */
-    protected onTriggerEnter(collision: CollisionInfo): void {}
+    protected onTriggerEnter(_collision: CollisionInfo): void {}
 
     /**
      * トリガーから出た時に呼ばれるメソッド
      * @param collision 衝突情報
      */
-    protected onTriggerExit(collision: CollisionInfo): void {}
+    protected onTriggerExit(_collision: CollisionInfo): void {}
 
     /**
      * 内部的に使用される更新メソッド

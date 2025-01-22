@@ -1,5 +1,4 @@
 import { GameObject } from '../core/GameObject';
-import { Vector3 } from 'three';
 import { Enemy } from './Enemy';
 
 export class EnemySpawner extends GameObject {

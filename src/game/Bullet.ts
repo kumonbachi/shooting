@@ -40,7 +40,7 @@ export class Bullet extends GameObject {
         }
     }
 
-    protected onCollision(collision: any): void {
+    protected onCollision(_collision: any): void {
         // 何かに衝突したら消滅
         if (this.parent) {
             this.removeFromParent();

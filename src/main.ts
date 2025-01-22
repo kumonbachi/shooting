@@ -4,7 +4,6 @@ import { BoxCollider } from './core/BoxCollider';
 import { BoxGeometry, MeshStandardMaterial, Mesh, Vector3, PlaneGeometry, MeshBasicMaterial, DoubleSide, CanvasTexture } from 'three';
 import { CollisionLayer } from './core/Collider';
 import { Player } from './game/Player';
-import { Enemy } from './game/Enemy';
 import { EnemySpawner } from './game/EnemySpawner';
 import { GameUI } from './game/GameUI';
 
